@@ -1,0 +1,55 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Tom de cinza claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos personalizados podem ser adicionados aqui para sobrescrever ou complementar o Bootstrap */
+
+.cabecalho h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho h3 {
+    color: #ffc107; /* Amarelo/dourado para destaque */
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+
+.alinha {
+    text-align: right;
+    font-style: italic;
+    color: #6c757d; /* Cinza mais claro */
+}
+
+.img-agro {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.img-card {
+    max-height: 220px;
+    object-fit: cover;
+}
+
+.img-slide {
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.footer p {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
