@@ -1,0 +1,204 @@
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Tom de cinza claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f39c12; /* Amarelo energizante */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Navegação */
+nav {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav .navbar-nav .nav-link {
+    color: #333;
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+nav .navbar-toggler {
+    border-color: #f39c12;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+/* Desafios da Energia */
+#desafios-energia {
+    background-color: white;
+}
+
+#desafios-energia h2 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+#desafios-energia .h4 {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+#desafios-energia p {
+    font-size: 1.1rem;
+}
+
+/* Soluções de Energia */
+#solucoes-energia {
+    background-color: #f8f9fa;
+}
+
+#solucoes-energia h2 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    border-radius: 0.5rem 0.5rem 0 0;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card a {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Impacto nas Comunidades */
+#impacto-comunitario-energia {
+    background-color: #fff;
+}
+
+#impacto-comunitario-energia h2 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+#impacto-comunitario-energia p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Inscrição */
+#inscricao-energia {
+    background-color: #f39c12;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#inscricao-energia h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#inscricao-energia .lead {
+    font-size: 1.25rem;
+}
+
+#inscricao-energia .btn {
+    background-color: white;
+    color: #f39c12;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+#inscricao-energia .btn:hover {
+    background-color: #f1c40f;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .lead {
+        font-size: 1.1rem;
+    }
+
+    #desafios-energia h2,
+    #solucoes-energia h2,
+    #impacto-comunitario-energia h2,
+    #inscricao-energia h2 {
+        font-size: 1.75rem;
+    }
+}
+

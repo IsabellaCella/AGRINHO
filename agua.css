@@ -1,0 +1,59 @@
+/* Água - Seção */
+#agua {
+    background-color: #eaf4f7; /* Tom suave de azul claro, lembrando a água */
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+#agua h2 {
+    color: #0066cc; /* Cor azul para o título */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#agua p.lead {
+    color: #555; /* Cor mais suave para o texto de descrição */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#agua ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+}
+
+#agua ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#agua .btn-outline-primary {
+    border-color: #0066cc;
+    color: #0066cc;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#agua .btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+#agua .img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #agua h2 {
+        font-size: 1.6rem; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    #agua p.lead {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+}

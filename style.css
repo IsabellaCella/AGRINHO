@@ -1,55 +1,248 @@
 /* style.css */
+
+/* Estilos globais e ajustes finos */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa; /* Tom de cinza claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo levemente acinzentada */
 }
 
-/* Estilos personalizados podem ser adicionados aqui para sobrescrever ou complementar o Bootstrap */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50; /* Tom de azul escuro para títulos */
+}
 
-.cabecalho h1 {
-    font-size: 3rem;
+a {
+    color: #007bff; /* Cor padrão dos links do Bootstrap */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header principal */
+header.bg-primary {
+    background-color: #007bff !important; /* Garante a cor primária do Bootstrap */
+}
+
+header h1.display-4 {
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-.cabecalho h3 {
-    color: #ffc107; /* Amarelo/dourado para destaque */
-    font-size: 1.75rem;
-    font-weight: normal;
+header p.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
 
-.alinha {
-    text-align: right;
-    font-style: italic;
-    color: #6c757d; /* Cinza mais claro */
+header .btn-light {
+    font-weight: 500;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.img-agro {
+/* Barra de navegação */
+nav.navbar {
+    padding: 1rem 0;
+}
+
+nav .navbar-brand {
+    font-weight: 600;
+    color: #343a40; /* Cor mais escura para o brand */
+}
+
+nav .navbar-brand:hover {
+    color: #007bff;
+}
+
+nav .navbar-nav .nav-link {
+    color: #495057;
+    padding: 0.75rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+nav .navbar-nav .nav-link.active {
+    font-weight: 500;
+    color: #007bff;
+}
+
+/* Seção de Conexão Campo-Cidade */
+#conexao-campo-cidade h2 {
+    margin-bottom: 1.5rem;
+}
+
+#conexao-campo-cidade p.lead {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+#conexao-campo-cidade ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#conexao-campo-cidade li {
+    margin-bottom: 0.5rem;
+}
+
+#conexao-campo-cidade img {
     max-width: 100%;
     height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.img-card {
-    max-height: 220px;
+/* Seção de Áreas de Interesse */
+#areas-interesse h2 {
+    margin-bottom: 1rem;
+}
+
+#areas-interesse p.lead {
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+#areas-interesse .card {
+    border-width: 0.1rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#areas-interesse .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#areas-interesse .card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+#areas-interesse .card-text {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+#areas-interesse .card-img-top {
+    max-height: 200px; /* Altura máxima para as imagens dos cards */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+#areas-interesse .btn-outline-primary,
+#areas-interesse .btn-outline-success,
+#areas-interesse .btn-outline-warning {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Seção de Galeria de Eventos */
+#galeria-eventos {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#galeria-eventos h2 {
+    margin-bottom: 2rem;
+}
+
+#galeria-eventos .carousel-inner .carousel-item img {
+    height: 400px; /* Altura fixa para as imagens do carousel */
     object-fit: cover;
 }
 
-.img-slide {
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 0.5rem;
+#galeria-eventos .carousel-caption {
+    bottom: 20px;
+    left: 15%;
+    right: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
-.footer p {
-    margin-bottom: 0.2rem;
+#galeria-eventos .carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#galeria-eventos .carousel-caption p {
+    font-size: 1rem;
+}
+
+/* Seção de Inscrições */
+#inscricoes {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#inscricoes h2 {
+    margin-bottom: 1.5rem;
+}
+
+#inscricoes p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#inscricoes .btn-light {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: #343a40 !important; /* Garante a cor dark do Bootstrap */
+}
+
+footer p {
+    margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
 
-.navbar-brand img {
-    margin-right: 10px;
+footer a {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos Responsivos (O Bootstrap já cuida de muita coisa, mas podemos ajustar se necessário) */
+@media (max-width: 768px) {
+    header h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    header p.lead {
+        font-size: 1rem;
+    }
+
+    #conexao-campo-cidade .col-md-6:last-child {
+        margin-top: 2rem;
+    }
+
+    #galeria-eventos .carousel-inner .carousel-item img {
+        height: 300px;
+    }
+
+    #galeria-eventos .carousel-caption {
+        display: none !important; /* Esconde a legenda em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    header h1.display-4 {
+        font-size: 2rem;
+    }
+
+    #areas-interesse .card-img-top {
+        max-height: none; /* Remove a altura máxima em telas muito pequenas */
+    }
 }

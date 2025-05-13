@@ -1,0 +1,248 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Cor de fundo neutra */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #28a745; /* Verde sucesso */
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #28a745;
+    background-color: #e9ecef;
+}
+
+.navbar-light .navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Seção: Inovações no Campo */
+#inovacao-producao {
+    padding: 50px 0;
+    border-bottom: 2px solid #e2e6ea;
+}
+
+#inovacao-producao h2 {
+    color: #28a745;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#inovacao-producao p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#inovacao-producao ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#inovacao-producao ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#inovacao-producao img {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção: Desafios da Produção */
+#desafios-producao {
+    padding: 50px 0;
+}
+
+#desafios-producao h2 {
+    color: #dc3545; /* Vermelho */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#desafios-producao ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#desafios-producao ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#desafios-producao p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Seção: Parcerias e Colaboração */
+#parcerias-e-colaboracao {
+    padding: 50px 0;
+    background-color: #f1f3f5;
+    border-bottom: 2px solid #e2e6ea;
+}
+
+#parcerias-e-colaboracao h2 {
+    color: #007bff; /* Azul */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#parcerias-e-colaboracao p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#parcerias-e-colaboracao ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#parcerias-e-colaboracao ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#parcerias-e-colaboracao img {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção: Inscrição */
+#inscricao-producao {
+    background-color: #28a745; /* Verde sucesso */
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+#inscricao-producao h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#inscricao-producao p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#inscricao-producao .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: #28a745;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+#inscricao-producao .btn:hover {
+    background-color: #e9ecef;
+    color: #28a745;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    #inovacao-producao, #desafios-producao, #parcerias-e-colaboracao {
+        padding: 30px 0;
+    }
+
+    #inovacao-producao h2, #desafios-producao h2, #parcerias-e-colaboracao h2 {
+        font-size: 1.8rem;
+    }
+
+    #inovacao-producao p, #desafios-producao p, #parcerias-e-colaboracao p {
+        font-size: 1rem;
+    }
+
+    #inscricao-producao h2 {
+        font-size: 1.8rem;
+    }
+
+    #inscricao-producao p {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    header .display-4 {
+        font-size: 2.5rem;
+    }
+
+    header .lead {
+        font-size: 1rem;
+    }
+
+    #inscricao-producao .btn {
+        font-size: 1rem;
+        padding: 8px 25px;
+    }
+}
