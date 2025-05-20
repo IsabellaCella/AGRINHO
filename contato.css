@@ -1,0 +1,172 @@
+/* style.css */
+
+/* ... (seus estilos existentes para body, h1, h2, a, header, etc.) ... */
+
+/* Definindo uma cor vermelha personalizada */
+:root {
+    --agrinho-red: #dc3545; /* Vermelho padrão do Bootstrap para perigo */
+    --agrinho-light-danger: #f8d7da; /* Um tom bem clarinho para o fundo do formulário */
+}
+
+/* Estilos gerais para headers com tema vermelho */
+header.bg-agrinho-red {
+    background-color: var(--agrinho-red) !important;
+    color: #fff !important;
+}
+
+.text-agrinho-red {
+    color: var(--agrinho-red) !important;
+}
+
+.bg-light-danger {
+    background-color: var(--agrinho-light-danger) !important;
+}
+
+/* Estilo para a barra de navegação com fundo vermelho */
+.navbar.bg-agrinho-red {
+    background-color: var(--agrinho-red) !important;
+}
+
+/* Ajusta a cor dos links da navbar para branco */
+.navbar.bg-agrinho-red .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Ajusta a cor do link ativo da navbar para um branco mais forte */
+.navbar.bg-agrinho-red .navbar-nav .nav-link.active {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* Ajusta a cor do texto do brand para branco */
+.navbar.bg-agrinho-red .navbar-brand .agrinho-brand-text {
+    color: #fff !important;
+}
+
+
+/* Estilos específicos para a página de Contato */
+#informacoes-contato {
+    padding: 2.5rem 0;
+}
+
+#informacoes-contato h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#informacoes-contato p.lead {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+#informacoes-contato .card {
+    border-width: 0.15rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#informacoes-contato .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#informacoes-contato .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+#informacoes-contato .card-title i {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    color: #dc3545; /* Cor danger do Bootstrap para os ícones */
+}
+
+#informacoes-contato .card-text {
+    font-size: 0.95rem;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+#informacoes-contato .form-label {
+    font-size: 1rem;
+    color: #343a40;
+}
+
+#informacoes-contato .btn-danger {
+    background-color: #dc3545 !important; /* Cor danger do Bootstrap para o botão */
+    border-color: #dc3545 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#informacoes-contato .btn-danger:hover {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+}
+
+
+/* Seção de FAQ (Contato) */
+#faq-contato {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 5rem; /* Espaçamento da seção anterior */
+}
+
+#faq-contato h2 {
+    margin-bottom: 1.5rem;
+}
+
+#faq-contato p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#faq-contato .btn-light {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste na seção de Inscrições para contrastar com o vermelho */
+/* Para a página de Contato, mantemos a cor original (verde) para esta seção */
+#contato #inscricoes { /* Adicione um ID ao body ou container principal se quiser que este estilo seja muito específico */
+    background-color: #28a745 !important; /* Verde para manter padrão do site */
+    color: #fff !important; /* Texto branco */
+}
+
+
+/* ... (seus estilos para footer existentes) ... */
+
+/* Responsividade para a página de Contato (ajustes adicionais) */
+@media (max-width: 768px) {
+    #informacoes-contato .col-md-6:last-child {
+        margin-top: 3rem;
+    }
+
+    #informacoes-contato .card {
+        margin-bottom: 1.5rem; /* Ajuste para o espaçamento dos cards em telas menores */
+    }
+
+    #faq-contato {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #informacoes-contato {
+        padding: 1.5rem 0;
+    }
+
+    #informacoes-contato .form-control {
+        font-size: 0.9rem;
+    }
+
+    #informacoes-contato .btn-danger {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

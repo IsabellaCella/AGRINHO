@@ -1,248 +1,175 @@
-/* Estilos gerais */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa; /* Cor de fundo neutra */
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* style.css */
+
+/* ... (seus estilos existentes para body, h1, h2, a, header, nav, etc.) ... */
+
+/* Estilos gerais para headers com tema verde */
+header.bg-success {
+    background-color: #28a745 !important; /* Verde padrão do Bootstrap */
+    color: #fff !important; /* Texto branco no fundo verde */
 }
 
-/* Cabeçalho */
-header {
-    background-color: #28a745; /* Verde sucesso */
-    color: #ffffff;
-    padding: 50px 0;
-    text-align: center;
+/* Estilos específicos para a página de Produção e Inovação */
+#intro-producao {
+    padding: 2.5rem 0;
 }
 
-header .display-4 {
-    font-size: 3rem;
+#intro-producao h2 {
+    color: #28a745; /* Título principal da seção em verde */
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-header .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+#intro-producao p.lead {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Navbar */
-.navbar {
-    margin-bottom: 30px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #333;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #28a745;
-    background-color: #e9ecef;
-}
-
-.navbar-light .navbar-brand img {
-    margin-right: 10px;
-}
-
-/* Seção: Inovações no Campo */
-#inovacao-producao {
-    padding: 50px 0;
-    border-bottom: 2px solid #e2e6ea;
-}
-
-#inovacao-producao h2 {
-    color: #28a745;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#inovacao-producao p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-#inovacao-producao ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#inovacao-producao ul li {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#inovacao-producao img {
+#intro-producao img {
     border-radius: 0.5rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Seção: Desafios da Produção */
-#desafios-producao {
-    padding: 50px 0;
+#intro-producao img:hover {
+    transform: scale(1.02);
 }
 
-#desafios-producao h2 {
-    color: #dc3545; /* Vermelho */
-    font-size: 2rem;
-    margin-bottom: 20px;
+/* Seção de Pilares da Inovação (Produção) */
+#pilares-inovacao {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #f8f9fa;
 }
 
-#desafios-producao ul {
-    list-style-type: none;
-    padding-left: 0;
+#pilares-inovacao h3 {
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
-#desafios-producao ul li {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
+#pilares-inovacao .card {
+    border-width: 0.15rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-#desafios-producao p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
+#pilares-inovacao .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.18);
 }
 
-/* Seção: Parcerias e Colaboração */
-#parcerias-e-colaboracao {
-    padding: 50px 0;
-    background-color: #f1f3f5;
-    border-bottom: 2px solid #e2e6ea;
+#pilares-inovacao .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-#parcerias-e-colaboracao h2 {
-    color: #007bff; /* Azul */
-    font-size: 2rem;
-    margin-bottom: 20px;
+#pilares-inovacao .card-title i {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
 }
 
-#parcerias-e-colaboracao p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
+#pilares-inovacao .card-text {
+    font-size: 0.98rem;
+    color: #495057;
+    margin-bottom: 1rem;
 }
 
-#parcerias-e-colaboracao ul {
-    list-style-type: none;
-    padding-left: 0;
+#pilares-inovacao .list-unstyled li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: flex-start;
 }
 
-#parcerias-e-colaboracao ul li {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
+#pilares-inovacao .list-unstyled li i {
+    margin-right: 0.5rem;
+    color: #28a745; /* Cor verde para os ícones de check */
+    font-size: 0.95rem;
+    flex-shrink: 0;
+    padding-top: 0.1rem;
 }
 
-#parcerias-e-colaboracao img {
-    border-radius: 0.5rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+/* Seção de Recursos (Produção) */
+#recursos-producao {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-/* Seção: Inscrição */
-#inscricao-producao {
-    background-color: #28a745; /* Verde sucesso */
-    color: #ffffff;
-    padding: 50px 0;
-}
-
-#inscricao-producao h2 {
-    font-size: 2rem;
+#recursos-producao h3 {
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
-#inscricao-producao p {
+#recursos-producao p.lead {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
-#inscricao-producao .btn {
-    font-size: 1.2rem;
-    padding: 10px 30px;
-    background-color: #ffffff;
-    color: #28a745;
-    border-radius: 30px;
-    transition: background-color 0.3s;
+#recursos-producao .btn-light {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-#inscricao-producao .btn:hover {
-    background-color: #e9ecef;
-    color: #28a745;
+#recursos-producao .btn-outline-light {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-/* Rodapé */
-footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
+/* Ajuste na seção de Inscrições para contrastar com o verde */
+#inscricoes.bg-success { /* Mantenha o estilo original se for usado em outras páginas */
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+/* Para a página de Produção, mudamos a cor de #inscricoes para amarelo */
+#producao #inscricoes { /* Adicione um ID ao body ou container principal se quiser que este estilo seja muito específico */
+    background-color: #ffc107 !important; /* Amarelo para contrastar com o verde da página */
+    color: #343a40 !important; /* Texto escuro */
 }
 
-footer p {
-    font-size: 1rem;
-    margin-bottom: 0;
-}
 
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
+/* ... (seus estilos para footer existentes) ... */
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
+/* Responsividade para a página de Produção (ajustes adicionais) */
 @media (max-width: 768px) {
-    header {
-        padding: 30px 0;
+    #intro-producao .col-md-5 {
+        margin-top: 2rem;
     }
 
-    #inovacao-producao, #desafios-producao, #parcerias-e-colaboracao {
-        padding: 30px 0;
+    #pilares-inovacao {
+        padding: 2rem;
     }
 
-    #inovacao-producao h2, #desafios-producao h2, #parcerias-e-colaboracao h2 {
-        font-size: 1.8rem;
+    #pilares-inovacao .card-title {
+        font-size: 1.1rem;
     }
 
-    #inovacao-producao p, #desafios-producao p, #parcerias-e-colaboracao p {
-        font-size: 1rem;
+    #pilares-inovacao .card-title i {
+        font-size: 1.3rem;
     }
 
-    #inscricao-producao h2 {
-        font-size: 1.8rem;
-    }
-
-    #inscricao-producao p {
-        font-size: 1rem;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 1rem;
-        padding: 8px 15px;
+    #pilares-inovacao .list-unstyled li {
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 576px) {
-    .navbar-nav .nav-link {
-        font-size: 0.9rem;
+    #intro-producao {
+        padding: 1.5rem 0;
     }
 
-    header .display-4 {
-        font-size: 2.5rem;
+    #pilares-inovacao {
+        padding: 1.5rem;
     }
 
-    header .lead {
+    #recursos-producao .btn-light,
+    #recursos-producao .btn-outline-light {
         font-size: 1rem;
-    }
-
-    #inscricao-producao .btn {
-        font-size: 1rem;
-        padding: 8px 25px;
+        padding: 0.6rem 1.2rem;
     }
 }

@@ -1,204 +1,164 @@
-/* Estilo base */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa; /* Tom de cinza claro */
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* style.css */
+
+/* ... (seus estilos existentes para body, h1, h2, a, header, nav, etc.) ... */
+
+/* Estilos gerais para headers com tema amarelo */
+header.bg-warning {
+    background-color: #ffc107 !important; /* Amarelo padrão do Bootstrap */
+    color: #343a40 !important; /* Texto escuro no fundo amarelo */
 }
 
-/* Cabeçalho */
-header {
-    background-color: #f39c12; /* Amarelo energizante */
-    color: white;
-    padding: 50px 0;
-    text-align: center;
+/* Estilos específicos para a página de Energia Rural */
+#intro-energia {
+    padding: 2.5rem 0;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+#intro-energia h2 {
+    color: #ffc107; /* Título principal da seção em amarelo */
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-header .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+#intro-energia p.lead {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Navegação */
-nav {
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav .navbar-brand img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-nav .navbar-nav .nav-link {
-    color: #333;
-}
-
-nav .navbar-nav .nav-link:hover {
-    color: #f39c12;
-}
-
-nav .navbar-toggler {
-    border-color: #f39c12;
-}
-
-/* Seções */
-section {
-    padding: 60px 0;
-}
-
-/* Desafios da Energia */
-#desafios-energia {
-    background-color: white;
-}
-
-#desafios-energia h2 {
-    font-size: 2rem;
-    color: #f39c12;
-    margin-bottom: 30px;
-}
-
-#desafios-energia .h4 {
-    color: #f39c12;
-    font-weight: bold;
-}
-
-#desafios-energia p {
-    font-size: 1.1rem;
-}
-
-/* Soluções de Energia */
-#solucoes-energia {
-    background-color: #f8f9fa;
-}
-
-#solucoes-energia h2 {
-    font-size: 2rem;
-    color: #f39c12;
-    margin-bottom: 30px;
-}
-
-.card {
+#intro-energia img {
     border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
 }
 
-.card-img-top {
-    border-radius: 0.5rem 0.5rem 0 0;
-    object-fit: cover;
-    height: 200px;
+#intro-energia img:hover {
+    transform: scale(1.02);
 }
 
-.card-body {
-    padding: 20px;
+/* Seção de Fontes e Soluções (Energia) */
+#fontes-solucoes {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #f8f9fa;
 }
 
-.card-title {
+#fontes-solucoes h3 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#fontes-solucoes .card {
+    border-width: 0.15rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#fontes-solucoes .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.18);
+}
+
+#fontes-solucoes .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#fontes-solucoes .card-title i {
     font-size: 1.5rem;
-    color: #f39c12;
-    font-weight: bold;
+    margin-right: 0.75rem;
 }
 
-.card-text {
-    font-size: 1rem;
+#fontes-solucoes .card-text {
+    font-size: 0.98rem;
+    color: #495057;
+    margin-bottom: 1rem;
 }
 
-.card a {
-    color: #f39c12;
-    font-weight: bold;
+#fontes-solucoes .list-unstyled li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: flex-start;
 }
 
-/* Impacto nas Comunidades */
-#impacto-comunitario-energia {
-    background-color: #fff;
+#fontes-solucoes .list-unstyled li i {
+    margin-right: 0.5rem;
+    color: #28a745; /* Cor verde para os ícones de check */
+    font-size: 0.95rem;
+    flex-shrink: 0;
+    padding-top: 0.1rem;
 }
 
-#impacto-comunitario-energia h2 {
-    font-size: 2rem;
-    color: #f39c12;
-    margin-bottom: 30px;
+/* Seção de Recursos (Energia) */
+#recursos-energia {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-#impacto-comunitario-energia p {
+#recursos-energia h3 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#recursos-energia p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#recursos-energia .btn-light {
     font-size: 1.1rem;
-    line-height: 1.8;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-/* Inscrição */
-#inscricao-energia {
-    background-color: #f39c12;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
+#recursos-energia .btn-outline-dark {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-#inscricao-energia h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
 
-#inscricao-energia .lead {
-    font-size: 1.25rem;
-}
+/* ... (seus estilos para #inscricoes e footer existentes) ... */
 
-#inscricao-energia .btn {
-    background-color: white;
-    color: #f39c12;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    padding: 10px 30px;
-    text-transform: uppercase;
-}
-
-#inscricao-energia .btn:hover {
-    background-color: #f1c40f;
-    color: white;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #f39c12;
-}
-
-/* Responsividade */
+/* Responsividade para a página de Energia (ajustes adicionais) */
 @media (max-width: 768px) {
-    .card-img-top {
-        height: 150px;
-    }
-    
-    header h1 {
-        font-size: 2.5rem;
+    #intro-energia .col-md-5 {
+        margin-top: 2rem;
     }
 
-    header .lead {
+    #fontes-solucoes {
+        padding: 2rem;
+    }
+
+    #fontes-solucoes .card-title {
         font-size: 1.1rem;
     }
 
-    #desafios-energia h2,
-    #solucoes-energia h2,
-    #impacto-comunitario-energia h2,
-    #inscricao-energia h2 {
-        font-size: 1.75rem;
+    #fontes-solucoes .card-title i {
+        font-size: 1.3rem;
+    }
+
+    #fontes-solucoes .list-unstyled li {
+        font-size: 0.85rem;
     }
 }
 
+@media (max-width: 576px) {
+    #intro-energia {
+        padding: 1.5rem 0;
+    }
+
+    #fontes-solucoes {
+        padding: 1.5rem;
+    }
+
+    #recursos-energia .btn-light,
+    #recursos-energia .btn-outline-dark {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
