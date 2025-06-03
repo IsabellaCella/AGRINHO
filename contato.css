@@ -10,7 +10,7 @@
 
 /* Estilos gerais para headers com tema vermelho */
 header.bg-agrinho-red {
-    background-color: var(--agrinho-red) !important;
+    background-color: red;
     color: #fff !important;
 }
 
