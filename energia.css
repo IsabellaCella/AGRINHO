@@ -2,10 +2,10 @@
 
 /* ... (seus estilos existentes para body, h1, h2, a, header, nav, etc.) ... */
 
-/* Estilos gerais para headers com tema amarelo */
-header.bg-warning {
-    background-color: #ffc107 !important; /* Amarelo padrão do Bootstrap */
-    color: #343a40 !important; /* Texto escuro no fundo amarelo */
+/* Estilos gerais para headers com tema azul (padrão para energia e água) */
+header.bg-primary {
+    background-color: #007bff !important; /* Azul padrão do Bootstrap */
+    color: #fff !important; /* Texto branco no fundo azul */
 }
 
 /* Estilos específicos para a página de Energia Rural */
@@ -14,7 +14,7 @@ header.bg-warning {
 }
 
 #intro-energia h2 {
-    color: #ffc107; /* Título principal da seção em amarelo */
+    color: #007bff; /* Título principal da seção em azul primário */
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -45,6 +45,7 @@ header.bg-warning {
 #fontes-solucoes h3 {
     font-weight: 600;
     margin-bottom: 2rem;
+    color: #007bff; /* Título central em azul primário */
 }
 
 #fontes-solucoes .card {
@@ -69,6 +70,24 @@ header.bg-warning {
     font-size: 1.5rem;
     margin-right: 0.75rem;
 }
+
+/* Corrigindo a cor dos títulos dos cards para corresponder às bordas */
+#fontes-solucoes .card.border-primary .card-title { /* Alterado de border-warning para border-primary */
+    color: #007bff !important; /* Azul do cabeçalho */
+}
+
+#fontes-solucoes .card.border-info .card-title {
+    color: #17a2b8 !important; /* Azul "info" */
+}
+
+#fontes-solucoes .card.border-success .card-title {
+    color: #28a745 !important; /* Verde "success" */
+}
+
+#fontes-solucoes .card.border-danger .card-title {
+    color: #dc3545 !important; /* Vermelho "danger" */
+}
+
 
 #fontes-solucoes .card-text {
     font-size: 0.98rem;
@@ -95,6 +114,8 @@ header.bg-warning {
 #recursos-energia {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background-color: #007bff !important; /* Fundo azul do cabeçalho */
+    color: #fff !important; /* Texto branco */
 }
 
 #recursos-energia h3 {
@@ -114,13 +135,14 @@ header.bg-warning {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-#recursos-energia .btn-outline-dark {
+#recursos-energia .btn-outline-light { /* Alterado de btn-outline-dark para btn-outline-light */
     font-size: 1.1rem;
     font-weight: 600;
     padding: 0.75rem 2rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+    color: #fff; /* Garante que o texto do botão outline seja branco */
+    border-color: #fff; /* Garante que a borda do botão outline seja branca */
 }
-
 
 /* ... (seus estilos para #inscricoes e footer existentes) ... */
 
@@ -157,7 +179,7 @@ header.bg-warning {
     }
 
     #recursos-energia .btn-light,
-    #recursos-energia .btn-outline-dark {
+    #recursos-energia .btn-outline-light { /* Alterado de btn-outline-dark para btn-outline-light */
         font-size: 1rem;
         padding: 0.6rem 1.2rem;
     }

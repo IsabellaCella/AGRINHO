@@ -2,19 +2,19 @@
 
 /* ... (seus estilos existentes para body, h1, h2, a, header, nav, etc.) ... */
 
-/* Estilos gerais para headers com tema verde */
-header.bg-success {
-    background-color: #28a745 !important; /* Verde padrão do Bootstrap */
-    color: #fff !important; /* Texto branco no fundo verde */
+/* Estilos gerais para headers com tema azul (padrão para energia e água) */
+header.bg-primary {
+    background-color: #007bff !important; /* Azul padrão do Bootstrap */
+    color: #fff !important; /* Texto branco no fundo azul */
 }
 
-/* Estilos específicos para a página de Produção e Inovação */
+/* Estilos específicos para a página de Produção e Inovação (agora azul) */
 #intro-producao {
     padding: 2.5rem 0;
 }
 
 #intro-producao h2 {
-    color: #28a745; /* Título principal da seção em verde */
+    color: #007bff; /* Título principal da seção em azul primário */
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -35,7 +35,7 @@ header.bg-success {
     transform: scale(1.02);
 }
 
-/* Seção de Pilares da Inovação (Produção) */
+/* Seção de Pilares da Inovação (Produção) - agora com tema azul */
 #pilares-inovacao {
     margin-top: 3rem;
     padding: 3rem;
@@ -45,6 +45,7 @@ header.bg-success {
 #pilares-inovacao h3 {
     font-weight: 600;
     margin-bottom: 2rem;
+    color: #007bff; /* Título central em azul primário */
 }
 
 #pilares-inovacao .card {
@@ -70,6 +71,24 @@ header.bg-success {
     margin-right: 0.75rem;
 }
 
+/* Corrigindo a cor dos títulos dos cards para corresponder às bordas */
+#pilares-inovacao .card.border-primary .card-title {
+    color: #007bff !important; /* Azul do cabeçalho */
+}
+
+#pilares-inovacao .card.border-info .card-title {
+    color: #17a2b8 !important; /* Azul "info" */
+}
+
+#pilares-inovacao .card.border-success .card-title {
+    color: #28a745 !important; /* Verde "success" (para os ícones de check nas listas) */
+}
+
+#pilares-inovacao .card.border-warning .card-title {
+    color: #ffc107 !important; /* Amarelo "warning" */
+}
+
+
 #pilares-inovacao .card-text {
     font-size: 0.98rem;
     color: #495057;
@@ -85,16 +104,18 @@ header.bg-success {
 
 #pilares-inovacao .list-unstyled li i {
     margin-right: 0.5rem;
-    color: #28a745; /* Cor verde para os ícones de check */
+    color: #28a745; /* Mantendo os ícones de check em verde para um toque de cor */
     font-size: 0.95rem;
     flex-shrink: 0;
     padding-top: 0.1rem;
 }
 
-/* Seção de Recursos (Produção) */
+/* Seção de Recursos (Produção) - agora azul */
 #recursos-producao {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background-color: #007bff !important; /* Fundo azul do cabeçalho */
+    color: #fff !important; /* Texto branco */
 }
 
 #recursos-producao h3 {
@@ -119,16 +140,13 @@ header.bg-success {
     font-weight: 600;
     padding: 0.75rem 2rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+    color: #fff; /* Garante que o texto do botão outline seja branco */
+    border-color: #fff; /* Garante que a borda do botão outline seja branca */
 }
 
-/* Ajuste na seção de Inscrições para contrastar com o verde */
-#inscricoes.bg-success { /* Mantenha o estilo original se for usado em outras páginas */
-    background-color: #28a745 !important;
-    color: #fff !important;
-}
-/* Para a página de Produção, mudamos a cor de #inscricoes para amarelo */
-#producao #inscricoes { /* Adicione um ID ao body ou container principal se quiser que este estilo seja muito específico */
-    background-color: #ffc107 !important; /* Amarelo para contrastar com o verde da página */
+/* Ajuste na seção de Inscrições para contrastar com o azul (mantendo o amarelo) */
+#inscricoes.bg-warning {
+    background-color: #ffc107 !important; /* Amarelo para contrastar com o azul da página */
     color: #343a40 !important; /* Texto escuro */
 }
 

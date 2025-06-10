@@ -5,6 +5,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     background-color: #f8f9fa; /* Cor de fundo levemente acinzentada */
+
+    /* Animação de entrada mais completa para cada página */
+    opacity: 0;
+    visibility: hidden; /* Adiciona visibilidade oculta para prevenir FOUC */
+    animation: fadeInPage 1.5s ease-in-out 0.1s forwards;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -213,6 +218,41 @@ footer a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+/* --- Novas Animações CSS --- */
+
+/* Animação para o corpo da página (fadeInPage) */
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        visibility: hidden; /* Garante que permaneça invisível no início */
+    }
+    to {
+        opacity: 1;
+        visibility: visible; /* Torna visível no final da animação */
+    }
+}
+
+/* Animação para o conteúdo principal (contentFadeIn) */
+main {
+    opacity: 0;
+    transform: translateY(20px); /* Começa 20px abaixo da posição final */
+    animation: contentFadeIn 1s ease-out 0.8s forwards; /* Inicia mais tarde, dura menos */
+}
+
+@keyframes contentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Fim das Novas Animações CSS --- */
+
 
 /* Estilos Responsivos (O Bootstrap já cuida de muita coisa, mas podemos ajustar se necessário) */
 @media (max-width: 768px) {

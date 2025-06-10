@@ -2,54 +2,58 @@
 
 /* ... (seus estilos existentes para body, h1, h2, a, header, etc.) ... */
 
-/* Definindo uma cor vermelha personalizada */
+/* Definindo uma cor azul padrão (se não estiver já definida para --bs-primary) */
 :root {
-    --agrinho-red: #dc3545; /* Vermelho padrão do Bootstrap para perigo */
-    --agrinho-light-danger: #f8d7da; /* Um tom bem clarinho para o fundo do formulário */
+    --bs-primary: #007bff; /* Azul padrão do Bootstrap */
+    --bs-primary-rgb: 0,123,255;
+    --bs-light-primary: #e0f2ff; /* Um tom bem clarinho para o fundo do formulário se necessário */
+    /* Remove as variáveis --agrinho-red e --agrinho-light-danger, pois não serão mais usadas */
 }
 
-/* Estilos gerais para headers com tema vermelho */
-header.bg-agrinho-red {
-    background-color: red;
-    color: #fff !important;
+/* Estilos gerais para headers com tema azul */
+header.bg-primary {
+    background-color: var(--bs-primary) !important; /* Azul padrão do Bootstrap */
+    color: #fff !important; /* Texto branco no fundo azul */
 }
 
-.text-agrinho-red {
+/* Remove as classes personalizadas vermelhas */
+/* .text-agrinho-red {
     color: var(--agrinho-red) !important;
 }
 
 .bg-light-danger {
     background-color: var(--agrinho-light-danger) !important;
+} */
+
+/* Estilo para a barra de navegação. Revertendo para bg-light, como nas outras páginas. */
+.navbar.bg-light { /* Ajustado de .bg-agrinho-red para .bg-light */
+    background-color: #f8f9fa !important; /* Fundo branco/claro */
 }
 
-/* Estilo para a barra de navegação com fundo vermelho */
-.navbar.bg-agrinho-red {
-    background-color: var(--agrinho-red) !important;
+/* Ajusta a cor dos links da navbar para cinza escuro (padrão Bootstrap em bg-light) */
+.navbar.bg-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.55) !important; /* Cor padrão para nav-link em navbar-light */
 }
 
-/* Ajusta a cor dos links da navbar para branco */
-.navbar.bg-agrinho-red .navbar-nav .nav-link {
-    color: #fff !important;
-}
-
-/* Ajusta a cor do link ativo da navbar para um branco mais forte */
-.navbar.bg-agrinho-red .navbar-nav .nav-link.active {
-    color: #fff !important;
+/* Ajusta a cor do link ativo da navbar para azul */
+.navbar.bg-light .navbar-nav .nav-link.active {
+    color: var(--bs-primary) !important; /* Azul primário para link ativo */
     font-weight: bold;
 }
 
-/* Ajusta a cor do texto do brand para branco */
-.navbar.bg-agrinho-red .navbar-brand .agrinho-brand-text {
-    color: #fff !important;
+/* Ajusta a cor do texto do brand para cinza escuro (padrão Bootstrap em bg-light) */
+.navbar.bg-light .navbar-brand .agrinho-brand-text {
+    color: #212529 !important; /* Cor padrão para brand text em navbar-light */
 }
 
 
-/* Estilos específicos para a página de Contato */
+/* Estilos específicos para a página de Contato (agora azul) */
 #informacoes-contato {
     padding: 2.5rem 0;
 }
 
 #informacoes-contato h2 {
+    color: var(--bs-primary); /* Título principal da seção em azul */
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -63,6 +67,7 @@ header.bg-agrinho-red {
 #informacoes-contato .card {
     border-width: 0.15rem;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-color: var(--bs-primary) !important; /* Borda dos cards em azul */
 }
 
 #informacoes-contato .card:hover {
@@ -76,12 +81,13 @@ header.bg-agrinho-red {
     display: flex;
     align-items: center;
     margin-bottom: 0.75rem;
+    color: var(--bs-primary) !important; /* Títulos dos cards em azul */
 }
 
 #informacoes-contato .card-title i {
     font-size: 1.5rem;
     margin-right: 0.75rem;
-    color: #dc3545; /* Cor danger do Bootstrap para os ícones */
+    color: var(--bs-primary); /* Ícones dos cards em azul */
 }
 
 #informacoes-contato .card-text {
@@ -95,24 +101,26 @@ header.bg-agrinho-red {
     color: #343a40;
 }
 
-#informacoes-contato .btn-danger {
-    background-color: #dc3545 !important; /* Cor danger do Bootstrap para o botão */
-    border-color: #dc3545 !important;
+#informacoes-contato .btn-primary { /* Alterado de .btn-danger para .btn-primary */
+    background-color: var(--bs-primary) !important; /* Botão em azul */
+    border-color: var(--bs-primary) !important;
     font-weight: 600;
     font-size: 1.1rem;
 }
 
-#informacoes-contato .btn-danger:hover {
-    background-color: #c82333 !important;
-    border-color: #bd2130 !important;
+#informacoes-contato .btn-primary:hover { /* Alterado de .btn-danger:hover para .btn-primary:hover */
+    background-color: #0056b3 !important; /* Tom mais escuro de azul ao passar o mouse */
+    border-color: #0056b3 !important;
 }
 
 
-/* Seção de FAQ (Contato) */
+/* Seção de FAQ (Contato) - agora azul */
 #faq-contato {
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin-top: 5rem; /* Espaçamento da seção anterior */
+    background-color: var(--bs-primary) !important; /* Fundo em azul */
+    color: #fff !important; /* Texto branco */
 }
 
 #faq-contato h2 {
@@ -131,12 +139,9 @@ header.bg-agrinho-red {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
 }
 
-/* Ajuste na seção de Inscrições para contrastar com o vermelho */
-/* Para a página de Contato, mantemos a cor original (verde) para esta seção */
-#contato #inscricoes { /* Adicione um ID ao body ou container principal se quiser que este estilo seja muito específico */
-    background-color: #28a745 !important; /* Verde para manter padrão do site */
-    color: #fff !important; /* Texto branco */
-}
+/* Ajuste na seção de Inscrições para contrastar com o azul (removendo a regra específica para #contato) */
+/* A seção de inscrições agora é padrão (sem uma cor específica para esta página) */
+/* Removida a regra #contato #inscricoes { ... } para evitar conflito e permitir que o Bootstrap defina a cor */
 
 
 /* ... (seus estilos para footer existentes) ... */
@@ -165,7 +170,7 @@ header.bg-agrinho-red {
         font-size: 0.9rem;
     }
 
-    #informacoes-contato .btn-danger {
+    #informacoes-contato .btn-primary { /* Alterado de .btn-danger para .btn-primary */
         font-size: 1rem;
         padding: 0.6rem 1.2rem;
     }
