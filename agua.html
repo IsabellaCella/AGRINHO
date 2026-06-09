@@ -1,155 +1,369 @@
+<!-- agua.html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGRINHO 2025 - Acessibilidade e Gestão da Água</title>
-    <meta name="description" content="Página dedicada à acessibilidade e gestão da água no campo, abordando desafios hídricos, tecnologias e a importância da preservação dos recursos.">
-    <meta name="keywords" content="agrinho, água, acessibilidade hídrica, gestão da água, escassez, irrigação, conservação, sustentabilidade, rural, campo">
-    <meta name="author" content="[Nome da Organização/Seu Nome]">
-    <link rel="icon" href="./assets/image/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Gestão da Água | Agro Forte</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">AGRINHO 2025</h1>
-            <p class="lead">Acessibilidade e Gestão da Água no Campo</p>
-            <p>Um recurso vital para a produção e a vida, que exige cuidado e inovação.</p>
-        </div>
-    </header>
 
-    <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-sm">
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/image/file_00000000b1ac61fb9f9b00be8e4d4122.png" alt="Logo Agrinho" height="40" class="d-inline-block align-middle">
-                AGRINHO 2025
+
+            <a class="navbar-brand" href="../index.html">
+
+                <i class="bi bi-droplet-half"></i>
+                Agro Forte
+
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Página Inicial</a>
+                        <a class="nav-link" href="../index.html">
+                            Início
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="energia.html">Energia Rural</a>
+                        <a class="nav-link active" href="agua.html">
+                            Água
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="agua.html">Acessibilidade à Água</a>
+                        <a class="nav-link" href="../energia/energia.html">
+                            Energia
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="producao.html">Produção e Inovação</a>
+                        <a class="nav-link" href="../producao/producao.html">
+                            Produção
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                        <a class="nav-link" href="../contato/contato.html">
+                            Contato
+                        </a>
                     </li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
 
-    <main class="container my-5">
-        <section id="intro-agua" class="row align-items-center mb-5">
-            <div class="col-md-7">
-                <h2>A Água: Essência da Vida e da Produção Rural</h2>
-                <p class="lead text-muted">Compreendendo a importância vital e os desafios da gestão hídrica no campo.</p>
-                <p>A água é, sem dúvida, o recurso mais fundamental para a vida em todas as suas formas e para a sustentabilidade da produção agrícola. No contexto rural, sua disponibilidade e gestão eficiente são cruciais para garantir a produtividade das lavouras, a saúde do gado e o bem-estar das comunidades.</p>
-                <p>Contudo, enfrentamos desafios crescentes como a escassez hídrica, a poluição de mananciais e a necessidade de otimizar seu uso diante das mudanças climáticas. O Agrinho 2025 dedica atenção especial a este tema, promovendo o debate e a busca por soluções inovadoras.</p>
-            </div>
-            <div class="col-md-5 text-center">
-                <img src="./assets/image/Screenshot_20250603-194402_Gallery.jpg" class="img-fluid rounded shadow-lg" alt="Pessoa utilizando sistema de irrigação eficiente.">
-            </div>
-        </section>
 
-        <section id="desafios-solucoes" class="mb-5 p-4 bg-light rounded shadow-sm">
-            <h3 class="text-center mb-4 text-primary">Desafios e Soluções para a Gestão da Água</h3>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card h-100 border-info">
-                        <div class="card-body">
-                            <h5 class="card-title text-info"><i class="bi bi-droplet-fill me-2"></i>Escassez Hídrica e Eficiência no Uso</h5>
-                            <p class="card-text">Exploramos as causas da diminuição da disponibilidade de água e as melhores práticas para a irrigação inteligente, reuso de água e o manejo integrado de recursos hídricos.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sistemas de irrigação por gotejamento e microaspersão</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sensores de umidade do solo e agricultura de precisão</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Coleta e armazenamento de água da chuva</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-success">
-                        <div class="card-body">
-                            <h5 class="card-title text-success"><i class="bi bi-recycle me-2"></i>Conservação e Preservação dos Mananciais</h5>
-                            <p class="card-text">A importância da proteção de rios, nascentes e aquíferos. Debatemos sobre reflorestamento, controle de erosão e a redução do uso de agrotóxicos para evitar a contaminação.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Áreas de Preservação Permanente (APPs)</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Técnicas de plantio direto e rotação de culturas</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Educação ambiental e conscientização comunitária</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-warning">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning"><i class="bi bi-lightbulb-fill me-2"></i>Tecnologias Inovadoras em Acesso à Água</h5>
-                            <p class="card-text">Novas abordagens e tecnologias para facilitar o acesso à água em regiões áridas ou com pouca infraestrutura, garantindo a segurança hídrica das famílias e lavouras.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Dessalinização de água salobra (em pequena escala)</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Poços artesianos e tecnologias de bombeamento solar</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sistemas de captação de neblina (fog harvesting)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-danger">
-                        <div class="card-body">
-                            <h5 class="card-title text-danger"><i class="bi bi-people-fill me-2"></i>Políticas Públicas e Participação Social</h5>
-                            <p class="card-text">A importância de políticas eficazes para a gestão dos recursos hídricos e o papel da comunidade rural na fiscalização, planejamento e execução de projetos.</p>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Comitês de Bacia Hidrográfica</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Legislação ambiental e direitos de uso da água</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Programas de incentivo à conservação</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="recursos-agua" class="text-center py-5 bg-primary text-white rounded shadow-sm">
-            <h3>Recursos para a Gestão Sustentável da Água</h3>
-            <p class="lead">Baixe nossos materiais educativos e participe de palestras e workshops.</p>
-            <div class="d-grid gap-2 col-md-6 mx-auto">
-                <a href="#" class="btn btn-light btn-lg mt-3"><i class="bi bi-cloud-arrow-down-fill me-2"></i>Baixar Guia de Boas Práticas</a>
-                <a href="#inscricoes" class="btn btn-outline-light btn-lg mt-2">Ver Programação de Eventos</a>
-            </div>
-        </section>
+    <!-- HERO -->
 
-        <section id="inscricoes" class="py-5 bg-success text-white rounded shadow-sm mt-5">
-            <div class="container text-center">
-                <h2>Participe do Agrinho 2025!</h2>
-                <p class="lead">Faça parte dessa celebração da conexão campo-cidade.</p>
-                <a href="contato.html" class="btn btn-light btn-lg">Inscreva-se Aqui</a>
-                <p class="mt-3"><small>As inscrições se encerram em [Data Limite].</small></p>
-            </div>
-        </section>
-    </main>
+    <header class="hero-agua">
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <div class="container">
-            <p>&copy; 2025 Agrinho - Celebrando a Conexão Campo-Cidade. Todos os direitos reservados.</p>
-            <p><a href="politica-privacidade.html" class="text-white">Política de Privacidade</a> | <a href="termos-uso.html" class="text-white">Termos de Uso</a></p>
-            <p>Desenvolvido por [Seu Nome/Organização]</p>
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+
+            <h1 class="display-3 fw-bold reveal">
+                Gestão Inteligente da Água
+            </h1>
+
+            <p class="lead reveal">
+                Garantindo produtividade agrícola com preservação ambiental.
+            </p>
+
+            <a href="#dashboard"
+                class="btn btn-success btn-lg reveal">
+
+                Explorar Dashboard
+
+            </a>
+
         </div>
+
+    </header>
+
+
+
+    <!-- INTRO -->
+
+    <section class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6 reveal">
+
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200"
+                    class="img-fluid rounded-4 shadow-lg"
+                    alt="Água no campo">
+
+            </div>
+
+            <div class="col-lg-6 reveal">
+
+                <h2 class="section-title">
+                    Água: recurso essencial para o futuro
+                </h2>
+
+                <p>
+                    A agricultura sustentável depende diretamente
+                    do uso consciente da água. Tecnologias modernas
+                    ajudam produtores a reduzir desperdícios,
+                    melhorar a irrigação e preservar rios,
+                    nascentes e o solo.
+                </p>
+
+                <p>
+                    O equilíbrio entre produção agrícola e meio ambiente
+                    começa pela gestão hídrica eficiente.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DASHBOARD -->
+
+    <section id="dashboard" class="dashboard-section">
+
+        <div class="container">
+
+            <div class="text-center mb-5 reveal">
+
+                <h2 class="section-title">
+                    Indicadores Sustentáveis
+                </h2>
+
+                <p class="section-subtitle">
+                    Monitoramento ambiental e eficiência hídrica
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="dashboard-card reveal">
+
+                        <i class="bi bi-droplet-fill"></i>
+
+                        <h3 class="metric"
+                            data-target="78">
+                            0%
+                        </h3>
+
+                        <p>
+                            Economia de água com irrigação inteligente
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dashboard-card reveal">
+
+                        <i class="bi bi-tree-fill"></i>
+
+                        <h3 class="metric"
+                            data-target="92">
+                            0%
+                        </h3>
+
+                        <p>
+                            Preservação das áreas de nascente
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dashboard-card reveal">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                        <h3 class="metric"
+                            data-target="85">
+                            0%
+                        </h3>
+
+                        <p>
+                            Aumento da eficiência produtiva
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5 reveal">
+
+            <h2 class="section-title">
+                Soluções Sustentáveis
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="feature-card reveal">
+
+                    <i class="bi bi-cloud-rain-heavy-fill"></i>
+
+                    <h4>
+                        Captação da Chuva
+                    </h4>
+
+                    <p>
+                        Reutilização de água da chuva
+                        para irrigação e limpeza rural.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card reveal">
+
+                    <i class="bi bi-cpu-fill"></i>
+
+                    <h4>
+                        Sensores Inteligentes
+                    </h4>
+
+                    <p>
+                        Monitoramento automático
+                        da umidade do solo.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card reveal">
+
+                    <i class="bi bi-recycle"></i>
+
+                    <h4>
+                        Reuso Sustentável
+                    </h4>
+
+                    <p>
+                        Tratamento e reutilização
+                        de recursos hídricos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta-section">
+
+        <div class="container text-center reveal">
+
+            <h2>
+                Agro Forte, Futuro Sustentável
+            </h2>
+
+            <p>
+                Produzir mais preservando o planeta.
+            </p>
+
+            <a href="../contato/contato.html"
+                class="btn btn-light btn-lg">
+
+                Entrar em Contato
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Agro Forte — Futuro Sustentável
+            </p>
+
+        </div>
+
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../main.js"></script>
+
 </body>
+
 </html>

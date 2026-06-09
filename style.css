@@ -1,288 +1,483 @@
-/* style.css */
+/* =========================================
+   AGRO FORTE 2025
+   STYLE.CSS
+========================================= */
 
-/* Estilos globais e ajustes finos */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    background-color: #f8f9fa; /* Cor de fundo levemente acinzentada */
+/* RESET */
 
-    /* Animação de entrada mais completa para cada página */
-    opacity: 0;
-    visibility: hidden; /* Adiciona visibilidade oculta para prevenir FOUC */
-    animation: fadeInPage 1.5s ease-in-out 0.1s forwards;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50; /* Tom de azul escuro para títulos */
+/* BODY */
+
+body{
+
+    font-family:'Segoe UI', sans-serif;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #f8f9fa,
+        #edf7ed
+    );
+
+    color:#333333;
+
+    overflow-x:hidden;
 }
 
-a {
-    color: #007bff; /* Cor padrão dos links do Bootstrap */
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* LINKS */
+
+a{
+    text-decoration:none;
 }
 
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+/* NAVBAR */
+
+.custom-navbar{
+
+    background:rgba(27,67,50,0.92);
+
+    padding:15px 0;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    transition:0.4s;
 }
 
-/* Header principal */
-header.bg-primary {
-    background-color: #007bff !important; /* Garante a cor primária do Bootstrap */
+.navbar-brand{
+
+    color:white !important;
+
+    font-size:1.6rem;
+
+    font-weight:800;
 }
 
-header h1.display-4 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+.nav-link{
+
+    color:rgba(255,255,255,0.85) !important;
+
+    margin-left:18px;
+
+    transition:0.3s;
+
+    font-weight:500;
 }
 
-header p.lead {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
+.nav-link:hover{
+
+    color:#95d5b2 !important;
+
+    transform:translateY(-2px);
 }
 
-header .btn-light {
-    font-weight: 500;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+.nav-link.active{
+
+    color:white !important;
+
+    font-weight:700;
 }
 
-/* Barra de navegação */
-nav.navbar {
-    padding: 1rem 0;
+/* HEADER */
+
+.page-header{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    color:white;
+
+    background-position:center;
+    background-size:cover;
 }
 
-nav .navbar-brand {
-    font-weight: 600;
-    color: #343a40; /* Cor mais escura para o brand */
+/* OVERLAY */
+
+.page-header::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.55)
+    );
 }
 
-nav .navbar-brand:hover {
-    color: #007bff;
+/* CONTAINER HEADER */
+
+.page-header .container{
+
+    position:relative;
+
+    z-index:2;
 }
 
-nav .navbar-nav .nav-link {
-    color: #495057;
-    padding: 0.75rem 1rem;
-    transition: color 0.3s ease;
+/* TEXTOS HEADER */
+
+.page-header h1{
+
+    font-size:5rem;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+
+    animation:fadeUp 1s ease;
 }
 
-nav .navbar-nav .nav-link:hover {
-    color: #007bff;
+.page-header p{
+
+    font-size:1.3rem;
+
+    max-width:750px;
+
+    margin:auto;
+
+    animation:fadeUp 1.3s ease;
 }
 
-nav .navbar-nav .nav-link.active {
-    font-weight: 500;
-    color: #007bff;
+/* IMAGENS DOS HEADERS */
+
+.home-header{
+
+    background-image:
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
 }
 
-/* Seção de Conexão Campo-Cidade */
-#conexao-campo-cidade h2 {
-    margin-bottom: 1.5rem;
+.agua-header{
+
+    background-image:
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
 }
 
-#conexao-campo-cidade p.lead {
-    color: #6c757d;
-    margin-bottom: 1rem;
+.energia-header{
+
+    background-image:
+    url("https://images.unsplash.com/photo-1466611653911-95081537e5b7");
 }
 
-#conexao-campo-cidade ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
+.producao-header{
+
+    background-image:
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
 }
 
-#conexao-campo-cidade li {
-    margin-bottom: 0.5rem;
+.contato-header{
+
+    background-image:
+    url("https://images.unsplash.com/photo-1521791136064-7986c2920216");
 }
 
-#conexao-campo-cidade img {
-    max-width: 100%;
-    height: auto;
+/* BOTÕES */
+
+.custom-btn{
+
+    background:
+    linear-gradient(
+        90deg,
+        #2d6a4f,
+        #52b788
+    );
+
+    border:none;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+    transition:0.4s;
+
+    box-shadow:
+    0 10px 25px rgba(82,183,136,0.35);
 }
 
-/* Seção de Áreas de Interesse */
-#areas-interesse h2 {
-    margin-bottom: 1rem;
+.custom-btn:hover{
+
+    transform:
+    translateY(-4px)
+    scale(1.03);
+
+    color:white;
+
+    box-shadow:
+    0 15px 35px rgba(82,183,136,0.50);
 }
 
-#areas-interesse p.lead {
-    color: #6c757d;
-    margin-bottom: 2rem;
+/* TÍTULOS */
+
+.section-title{
+
+    font-size:2.8rem;
+
+    font-weight:800;
+
+    color:#1b4332;
+
+    margin-bottom:25px;
 }
 
-#areas-interesse .card {
-    border-width: 0.1rem;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+/* TEXTOS */
+
+.section-text{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    color:#555555;
 }
 
-#areas-interesse .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+/* CARDS */
+
+.info-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:0.4s;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    height:100%;
 }
 
-#areas-interesse .card-title {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0.75rem;
+.info-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,0.12);
 }
 
-#areas-interesse .card-text {
-    font-size: 0.95rem;
-    color: #495057;
+.info-card i{
+
+    font-size:3.5rem;
+
+    color:#2d6a4f;
+
+    margin-bottom:20px;
 }
 
-#areas-interesse .card-img-top {
-    max-height: 200px; /* Altura máxima para as imagens dos cards */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+.info-card h3{
+
+    font-weight:700;
+
+    margin-bottom:15px;
 }
 
-#areas-interesse .btn-outline-primary,
-#areas-interesse .btn-outline-success,
-#areas-interesse .btn-outline-warning {
-    font-size: 0.9rem;
-    font-weight: 500;
+/* DASHBOARD */
+
+.dashboard{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,0.08);
 }
 
-/* Seção de Galeria de Eventos */
-#galeria-eventos {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+/* PROGRESS BAR */
+
+.progress{
+
+    height:32px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:#e9ecef;
 }
 
-#galeria-eventos h2 {
-    margin-bottom: 2rem;
+.progress-bar{
+
+    font-weight:700;
+
+    font-size:0.95rem;
 }
 
-#galeria-eventos .carousel-inner .carousel-item img {
-    height: 400px; /* Altura fixa para as imagens do carousel */
-    object-fit: cover;
+/* CONTADORES */
+
+#counter1,
+#counter2,
+#counter3{
+
+    font-size:3rem;
+
+    font-weight:900;
+
+    color:#2d6a4f;
 }
 
-#galeria-eventos .carousel-caption {
-    bottom: 20px;
-    left: 15%;
-    right: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+/* FOOTER */
+
+.footer-area{
+
+    background:
+    linear-gradient(
+        90deg,
+        #1b4332,
+        #2d6a4f
+    );
+
+    color:white;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    margin-top:100px;
 }
 
-#galeria-eventos .carousel-caption h5 {
-    font-size: 1.5rem;
-    font-weight: 600;
+.footer-area h4{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    margin-bottom:20px;
 }
 
-#galeria-eventos .carousel-caption p {
-    font-size: 1rem;
+.footer-links{
+
+    margin-top:20px;
 }
 
-/* Seção de Inscrições */
-#inscricoes {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.footer-links a{
+
+    color:white;
+
+    margin:0 10px;
+
+    transition:0.3s;
 }
 
-#inscricoes h2 {
-    margin-bottom: 1.5rem;
+.footer-links a:hover{
+
+    color:#95d5b2;
 }
 
-#inscricoes p.lead {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+/* ANIMAÇÕES */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
 }
 
-#inscricoes .btn-light {
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 0.75rem 2rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
 }
 
-/* Footer */
-footer.bg-dark {
-    background-color: #343a40 !important; /* Garante a cor dark do Bootstrap */
-}
+@keyframes fadeUp{
 
-footer p {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
+    from{
 
-footer a {
-    color: #f8f9fa;
-    text-decoration: underline;
-}
+        opacity:0;
 
-footer a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* --- Novas Animações CSS --- */
-
-/* Animação para o corpo da página (fadeInPage) */
-@keyframes fadeInPage {
-    from {
-        opacity: 0;
-        visibility: hidden; /* Garante que permaneça invisível no início */
+        transform:translateY(50px);
     }
-    to {
-        opacity: 1;
-        visibility: visible; /* Torna visível no final da animação */
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
     }
 }
 
-/* Animação para o conteúdo principal (contentFadeIn) */
-main {
-    opacity: 0;
-    transform: translateY(20px); /* Começa 20px abaixo da posição final */
-    animation: contentFadeIn 1s ease-out 0.8s forwards; /* Inicia mais tarde, dura menos */
-}
+/* RESPONSIVIDADE */
 
-@keyframes contentFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+@media(max-width:992px){
+
+    .page-header h1{
+
+        font-size:3.5rem;
     }
 }
 
-/* --- Fim das Novas Animações CSS --- */
+@media(max-width:768px){
 
+    .page-header{
 
-/* Estilos Responsivos (O Bootstrap já cuida de muita coisa, mas podemos ajustar se necessário) */
-@media (max-width: 768px) {
-    header h1.display-4 {
-        font-size: 2.5rem;
+        min-height:80vh;
     }
 
-    header p.lead {
-        font-size: 1rem;
+    .page-header h1{
+
+        font-size:2.7rem;
     }
 
-    #conexao-campo-cidade .col-md-6:last-child {
-        margin-top: 2rem;
+    .section-title{
+
+        font-size:2rem;
     }
 
-    #galeria-eventos .carousel-inner .carousel-item img {
-        height: 300px;
+    .info-card{
+
+        margin-bottom:25px;
     }
 
-    #galeria-eventos .carousel-caption {
-        display: none !important; /* Esconde a legenda em telas menores */
+    .dashboard{
+
+        padding:30px;
     }
 }
 
-@media (max-width: 576px) {
-    header h1.display-4 {
-        font-size: 2rem;
+@media(max-width:576px){
+
+    .page-header h1{
+
+        font-size:2.1rem;
     }
 
-    #areas-interesse .card-img-top {
-        max-height: none; /* Remove a altura máxima em telas muito pequenas */
+    .page-header p{
+
+        font-size:1rem;
+    }
+
+    #counter1,
+    #counter2,
+    #counter3{
+
+        font-size:2.2rem;
     }
 }
